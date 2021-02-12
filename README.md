@@ -45,6 +45,7 @@ J'utilise les textures fournis dans le pack de Mixamo !
 
 ### Inverse Kinematics : Fabrik
 
+Le code se trouve [ici](TP1B/TP1B/Assets/script/).  
 L'implémentation de Fabril permet d'avoir une solution d'IK simple et temps réel en comparaison à d'autre solution comme la Jacobienne inversée ou CCD.
 Cette solution est approchée et donc fonctionnelle pour des cas comme des jeux, mais pas adaptée pour des simulations physiques fidèles.
 
