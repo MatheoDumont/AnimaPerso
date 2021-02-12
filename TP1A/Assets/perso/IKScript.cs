@@ -24,6 +24,8 @@ public class IKScript : MonoBehaviour
 
     // http://gyanendushekhar.com/2017/06/29/understanding-layer-mask-unity-5-tutorial/
     int LayerMaskCharacters;
+
+    public GameObject target= null;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -99,7 +101,6 @@ public class IKScript : MonoBehaviour
 
                 // Set the right hand target position and rotation, if one has been assigned
 
-                // animator.SetIKPositionWeight(AvatarIKGoal.RightFoot, 1);
                 animator.SetIKPositionWeight(AvatarIKGoal.LeftFoot, lf_param);
                 animator.SetIKPositionWeight(AvatarIKGoal.RightFoot, rf_param);
 
@@ -112,6 +113,11 @@ public class IKScript : MonoBehaviour
                 animator.SetIKRotation(AvatarIKGoal.LeftFoot, lfRot);
                 animator.SetIKRotation(AvatarIKGoal.RightFoot, rfRot);
 
+
+                // animator.SetIKPositionWeight(AvatarIKGoal.LeftFoot, 1);
+                // animator.SetIKRotationWeight(AvatarIKGoal.LeftFoot, 1);
+                // animator.SetIKPosition(AvatarIKGoal.LeftFoot, target.transform.position);
+                // animator.SetIKRotation(AvatarIKGoal.LeftFoot, target.transform.rotation);
             }
         }
     }
